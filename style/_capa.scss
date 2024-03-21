@@ -1,0 +1,61 @@
+#hero1 {
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/acapa.jpeg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+    .imgheromobile{
+        display: none;
+        overflow: hidden;
+    }
+
+    .titulo-capa {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 35%, rgba(255, 255, 255, 0) 80%);
+
+        .textocapa {
+            width: 60%;
+            align-self:flex-start;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5%;
+            h1 {
+                color: $corprincipal;
+                padding: 3rem;
+                width: 100%;
+                letter-spacing: 0.2rem;
+                font-family: 'poppins';
+                justify-content: center;
+                text-align: center;
+                font-size: clamp(3rem, 4.5rem, 5rem);
+                line-height: 1.8;
+                font-weight: 500;
+                animation: fadeIn 1s ease-in;
+               
+
+            }
+            
+
+        }
+
+
+    }
+}

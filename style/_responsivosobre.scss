@@ -1,0 +1,66 @@
+@media screen and (max-width: 1700px) {
+
+    #sobre {
+        .container-sobre {
+            padding: .5rem;
+
+            p {
+                padding: .5rem;
+            }
+            
+
+            img {
+                padding: 1rem;
+                width: 50%;
+            }
+        }
+
+    }
+
+
+}
+
+@media screen and (max-width: 1255px) {
+
+
+    #sobre {
+        .container-sobre {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+
+
+            .txt-sobre {
+                padding-left: 0 ;
+                width: 100%;
+                order: 2;
+            }
+
+            .ph-sobre {
+                width: 80%;
+                padding: 1rem;
+
+                order: 1;
+                img{
+                    padding: 0;
+                }
+            }
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 873px) {
+
+    #sobre {
+
+
+        .ph-sobre {
+            width: 70%;
+            padding: 1rem;
+
+            order: 1;
+        }
+    }
+}

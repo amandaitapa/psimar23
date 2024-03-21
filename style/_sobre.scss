@@ -1,0 +1,67 @@
+#sobre {
+    top: 10vh;
+    background-color: $corsecundaria;
+    padding: 5vw;
+
+    .container-sobre {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 5rem;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            width: 100%;
+            position: relative;
+        }
+    }
+
+    .txt-sobre {
+        width: 60%;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        color: $corprincipal;
+        padding-left: 5rem;
+
+
+        p {
+            font-family: 'poppins' sans-serif;
+            text-align: justify;
+            line-height: 3.5rem;
+            padding: 2rem;
+            animation: fadeIn 1s ease-in;
+            text-indent: 2rem;
+
+
+        }
+    }
+
+    p {
+        font-family: 'poppins' sans-serif;
+        text-align: justify;
+        line-height: 3.5rem;
+        padding: 2rem;
+        animation: fadeIn 1.5s ease-in;
+        text-indent: 2rem;
+    }
+
+    .ph-sobre {
+        width: 40%;
+        height: auto;
+        display: flex;
+        justify-content:center;
+        position: relative;
+        align-items:center;
+        align-content: flex-start;
+        animation: fadeIn 1.7s ease-in;
+
+        img {
+
+            width: 50%;
+
+        }
+    }
+}

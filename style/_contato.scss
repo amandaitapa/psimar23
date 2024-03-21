@@ -1,0 +1,158 @@
+#contato {
+    background-color: $corsecundaria;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+
+    .carta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 30%;
+        background-color: $corprincipal;
+        padding: 6rem;
+        position: relative;
+        height: 100%;
+        animation: fadeIn 1s ease-in;
+        margin: 0;
+        height: 100%;
+
+        p {
+            position: relative;
+            color: $corsecundaria;
+            font-family: 'poppins';
+            text-align: center;
+            line-height: 2.5rem;
+            padding: .5rem;
+            width: 100%;
+
+        }
+
+        .linkcontato {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 30%;
+
+            li {
+
+                position: relative;
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                padding: 1rem;
+
+                a {
+                    list-style: none;
+                    text-decoration: none;
+                    position: relative;
+                    display: flex;
+
+                    .icontato {
+                        padding: 1rem;
+                        position: relative;
+                        width: 25px;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0;
+                        display: flex;
+
+
+                        img {
+                            width: 100%;
+                        }
+
+                        .icontato:hover {
+                            cursor: pointer;
+                        }
+                    }
+
+                    p {
+                        width: 90%;
+                        justify-self: flex-start;
+                        align-self: flex-start;
+                        text-align: left;
+                        display: flex;
+                        padding: 1rem;
+                    }
+                }
+
+                a:hover {
+                    text-shadow: 0px 0px 10px #faf9f6;
+                    box-shadow: 0px 0px 10px #2e4052;
+                    transition: 0.5s ease-in-out;
+                    color: $cordetalhe;
+                }
+            }
+        }
+    }
+
+    .contatoinfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-content: flex-start;
+        align-items: flex-start;
+        justify-self: flex-start;
+        align-self: flex-start;
+        width: 60%;
+        height: 100%;
+        background-color: $corsecundaria;
+        padding: 10%;
+
+        h2 {
+            text-transform: uppercase;
+            align-self: flex-start;
+            justify-content: left;
+            justify-self: flex-start;
+            padding: 1rem;
+        }
+
+        h3 {
+            display: none;
+            overflow: hidden;
+        }
+
+
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            color: $corprincipal;
+            justify-content: left;
+            align-content: flex-start;
+            gap: 1rem;
+
+
+            .field {
+                background-color: $corsecundaria;
+                margin-bottom: 5px;
+                padding: 2rem;
+                border: none;
+                border-bottom: 1.5px solid $corprincipal;
+                font-family: 'poppins', sans-serif;
+                color: $corprincipal;
+                width: 100%;
+                font-size: clamp(1.6rem, 1.8rem, 2rem);
+                /* Cor desejada para o placeholder */
+            }
+
+            input::placeholder,
+            textarea::placeholder {
+                color: $corprincipal;
+               
+            }
+        }
+        
+    }
+    
+
+}

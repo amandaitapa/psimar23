@@ -1,0 +1,30 @@
+@media screen and (max-width: 1255px) {
+
+
+    #iniciar {
+        
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+
+
+            .passos {
+                width: 100%;
+                
+            }
+
+            .passo {
+                width: 100%;
+                padding: 1rem;
+
+                order: 2;
+            }
+            .imgpasso{
+                    width: 60%;
+                    padding: 0;
+                }
+            
+        }
+
+
+    }

@@ -1,0 +1,63 @@
+@media screen and (max-width: 1500px) {
+
+    #boas-vindas {
+        .container-boas {
+            padding: 5rem;
+
+            p {
+                padding: 1rem;
+            }
+
+            img {
+                padding: 1rem;
+            }
+        }
+
+    }
+
+
+}
+
+@media screen and (max-width: 1255px) {
+
+
+    #boas-vindas {
+        .container-boas {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+
+
+            .txt-boas {
+                width: 100%;
+                order: 2;
+            }
+
+            .ph-boas {
+                width: 60%;
+                padding: 1rem;
+
+                order: 1;
+                img{
+                    padding: 0;
+                }
+            }
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 873px) {
+
+    #boas-vindas {
+
+
+        .ph-boas {
+            width: 70%;
+            padding: 1rem;
+
+            order: 1;
+        }
+    }
+}

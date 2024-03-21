@@ -1,0 +1,65 @@
+#iniciar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5vw;
+
+
+    h2 {
+        position: relative;
+        width: 100%;
+        border-bottom-style: solid;
+        border-width: .2rem;
+        border-color: $corprincipal;
+        justify-content: center;
+        align-items: center
+    }
+
+    .passos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        width: 100%;
+        background-color: $corsecundaria;
+    }
+
+    .passo {
+
+        width: 60%;
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: left;
+        position: relative;
+        align-items: center;
+
+        h3 {
+            font-weight: 600;
+            font-family: 'montserrat';
+            padding-top: 2rem;
+            text-align: left;
+        }
+
+        p {
+            padding: 0;
+            margin: 0;
+            font-family: 'poppins';
+            font-weight: 200;
+            text-align: left;
+            line-height: 2.5rem;
+            color: $corprincipal;
+            text-align: justify;
+        }
+    }
+
+    .imgpasso {
+        width: 40%;
+        padding: 2rem;
+    }
+}

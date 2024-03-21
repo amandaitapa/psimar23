@@ -1,0 +1,121 @@
+/* iniciando vantagens */
+
+#vantagens {
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding: 5vw;
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        position: relative;
+        font-weight: 600;
+    }
+
+    h3 {
+        padding: 1rem;
+    }
+
+    .container-cards {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 5rem;
+        border-top-style: solid;
+        border-width: .2rem;
+        border-color: $corprincipal;
+        justify-content: center;
+        align-items: center
+    }
+
+    .card {
+        position: relative;
+        margin: 2rem;
+        width: 30rem;
+        height: 25rem;
+        color: $corprincipal;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: $corsecundaria;
+        border-width: .5px;
+        box-shadow: 6px 6px 15px $corprincipal;
+
+        p {
+            position: absolute;
+            display: none;
+            overflow: hidden;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            transition: .5 ease;
+            overflow: hidden;
+            color: $corsecundaria;
+            flex: 3;
+
+        }
+
+        h3 {
+
+            transition: 1s ease-in;
+            flex: 1;
+        }
+    }
+
+    .img {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        height: 80px;
+        width: 80px;
+        flex: 3;
+
+        img {
+            position: relative;
+            width: 100%;
+        }
+    }
+
+    .card:hover {
+
+        background-color: $corprincipal;
+        border-color: $corprincipal;
+        transition: .7s ease-in-out;
+        color: $corsecundaria;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+
+        p {
+            height: 80%;
+            display: flex;
+            flex: 3;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            opacity: 1;
+            transition: .7 ease-in-out;
+        }
+
+        h3 {
+            color: $corsecundaria;
+            flex: 1;
+        }
+
+        .img {
+            display: none;
+            transition: .3 ease;
+            overflow: hidden;
+        }
+    }
+}

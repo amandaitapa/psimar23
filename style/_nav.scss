@@ -1,0 +1,182 @@
+nav {
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  background-color: $corprincipal;
+  padding-left: 5vw;
+  padding-right: 8vw;
+  transition: opacity 0.3s;
+  z-index: 1;
+  box-shadow: 6px 0px 6px $corsecundaria;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  transition: opacity 0.3s;
+  flex: 1;
+}
+
+.nav-links a {
+  color: $corsecundaria;
+  margin: 5px;
+  text-decoration: none;
+  letter-spacing: .3rem;
+  font-weight: 600;
+  font-size: clamp(1.6rem, 1.8rem, 2rem);
+  gap: 3rem;
+  transition: 0.7s ease;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover {
+  color: $cordetalhe;
+   text-shadow: 0px 0px 10px $cordetalhe;
+  transition: 0.5s ease-in-out;
+  
+  
+}
+
+.nav-links li {
+  list-style: none;
+  
+}
+
+.logo {
+  font-family: "Poppins";
+  justify-content: space-around;
+  color: $corsecundaria;
+  margin: 5px;
+  letter-spacing: .4rem;
+  text-transform: uppercase;
+  font-size: clamp(1.4rem, 2rem, 1.6rem);
+  padding: 1rem;
+  align-items: center;
+  text-align: center;
+  font-weight: 800;
+  flex: 1;
+}
+
+.logo span {
+  color: $cordetalhe;
+  letter-spacing: 2px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: $corsecundaria;
+  margin: 5px;
+  width: 100%;
+  text-align: left;
+}
+
+.logo a:hover {
+  text-shadow: 0px 0px 10px $cordetalhe;
+  transition: 0.5s ease-in-out;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: $corsecundaria;
+  margin: 5px;
+}
+
+
+
+
+@media screen and (max-width: 1439px) {
+ 
+
+ 
+  .nav-links {
+    overflow: hidden;
+    position: fixed;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    left: 100%;
+    height: 90%;
+    top: 10vh;
+    background-color: $corprincipal; 
+    margin: 5px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    transition: 1s ease-in-out;
+
+
+  }
+
+  .nav-links li {
+    display: flex;
+    margin: 16px 0;
+    box-shadow: 1px 1px 4px $corsecundaria;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid $corsecundaria;
+
+  }
+
+  .nav-links li a {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    
+  }
+
+  .nav-links.active {
+    left: 0;
+    transition: 1s ease-in-out;
+    opacity: 1;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+    transition: all 2s ease-in-out;
+  }
+
+  .burger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    transition: 0.2s ease-in-out;
+  }
+
+  .burger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    transition: 0.2s ease-in-out;
+  }
+
+  .social {
+    display: none;
+  }
+}
